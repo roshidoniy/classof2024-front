@@ -1,0 +1,50 @@
+.alumnis-list-container {
+    color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.alumnis-list-container * {
+    color: wheat;
+    padding: 5px 10px;
+}
+
+.alumnis-list-container a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.search-box input {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+    width: calc(50vw + 10%);
+    border-radius: 20px;
+    color: #0D3B66;
+    font-size: 25px;
+    font-weight: bold;
+
+    border: 1px solid #ccc;
+    background-color: #fff;
+    /* Ensure input field background is white for better contrast */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1),
+        0 1px 3px rgba(255, 255, 255, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4),
+        0 4px 6px rgba(255, 255, 255, 0.2);
+
+
+}

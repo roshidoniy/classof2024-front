@@ -1,0 +1,23 @@
+.message-box {
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    border-radius: 10px 10px 10px 2px;
+    color: #FAF0CA;
+    padding: 10px 10px;
+}
+.message-text{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: .5px;
+    line-height: 20px;
+
+}
+
+@media (max-width: 850px) {
+    .message-box{
+        width: 100%;
+        margin: 0;
+    }
+}

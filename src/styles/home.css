@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D3B66;
+    width: 100%;
+    /* Body background color */
+}
+.container img{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: left;
+}
+.schoolName{
+    z-index: 3;
+}
+.schoolName a{
+    padding: 10px 17px; /* Increased padding for better touch target */
+    background-color: #f09048;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: Arial, sans-serif; /* Adjust font family */
+    font-weight: bolder; /* Adjust font weight */
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.schoolName {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.schoolName p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.button {
+    padding: 14px 28px; /* Increased padding for better touch target */
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: Arial, sans-serif; /* Adjust font family */
+    font-weight: bold; /* Adjust font weight */
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Add pointer cursor for clickable feel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    z-index: 2;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 12px 24px; /* Adjusted padding for smaller screens */
+        font-size: 16px; /* Reduced font size */
+        width: 80%;
+    }
+}
