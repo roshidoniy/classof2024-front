@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 const Alumnis = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [alumnisList, setAlumnisList] = useState(data)
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
 
