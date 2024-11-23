@@ -1,5 +1,7 @@
-import MuslimGirl from "/images/muslim-girl-with-book.png"
-import Boy from "/images/arafed-cartoon-character-man.png"
+import MuslimGirl from "/assets/muslim-girl-with-book.png"
+import Boy from "/assets/arafed-cartoon-character-man.png"
+import ssImage from "/assets/school.jpg"
+import sevinchImg from "/assets/sevinch.webp"
 import '../styles/alumni-page.css'
 import Message from "../Components/Message"
 import { Link, useParams } from "react-router-dom"
@@ -52,11 +54,11 @@ const AlumniPage = () => {
                     )
                 })}
                 <div className="sodiq-part">
-                  <img src="/images/school.jpg" alt="" />
+                  <img src={ssImage} alt="Sodiq school" />
                   <Message message={data?.school?.schoolWish || ""} />
                 </div>
                 <div className="sodiq-part">
-                  <img src="/images/sevinch.webp" alt="" />
+                  <img src={sevinchImg} alt="Sevinch" />
                   <Message message={data?.school?.sevinchOpaWish || ""} />
                 </div>
             </div>

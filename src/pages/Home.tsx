@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import groupImage from "/images/groupImage.webp"
+import groupImage from "/assets/groupImage.webp"
 import "../styles/home.css"
 const Home = () => {
     return (
