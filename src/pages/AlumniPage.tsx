@@ -40,11 +40,22 @@ const AlumniPage = () => {
     
         fetchData();
       }, [id]);
+
+    if (loading) {
+        return (
+            <div className="alumni-page-container flex justify-center items-center min-h-screen">
+                <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-orange-500"></div>
+            </div>
+        );
+    }
+
     return (
         <div className="alumni-page-container">
             <div className="alumni-picture-box">
-                <h1>{data?.name}</h1>
-                {loading ? null : <img src={data?.isBoy ? Boy : MuslimGirl} alt="" className="alumni-picture" />}
+                <h1 className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent">
+                    {data?.name}
+                </h1>
+                <img src={data?.isBoy ? Boy : MuslimGirl} alt="" className="alumni-picture" />
             </div>
             <div className="wishes-for-alumni">
               <Link to="/alumnis">🔙 Go back to List</Link>
